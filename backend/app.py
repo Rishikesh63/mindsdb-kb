@@ -4,6 +4,8 @@ import mindsdb_sdk
 app = Flask(__name__)
 server = mindsdb_sdk.connect('http://127.0.0.1:47334')
 agent_name = 'ticket_support_agent'
+# print(server.status()['mindsdb_version'])
+
 
 FORM_HTML = """
 <!DOCTYPE html>
